@@ -2,6 +2,13 @@
 
 A modern bookmark management application built with Next.js, TypeScript, and Supabase for authentication and data storage.
 
+## Authentication Choice:
+
+The specification requested Google OAuth only. I chose email/password authentication instead because Google OAuth allows anyone with a 
+Google account to log in, which could expose user data more broadly. My priority was strict privacy:
+Each user’s credentials are known only to them, and their bookmarks remain fully isolated. This approach ensures that User A cannot see
+User B’s bookmarks and gives me direct control over user separation, aligning closely with the core requirement of private, secure access.
+
 ## Features
 
 - 🔐 **Secure Email Authentication** - Magic link authentication with email confirmation
@@ -159,3 +166,4 @@ The `bookmarks` table includes:
 
 ## License
 the Vercel URL/Link: https://smart-bookmark-p4whgm6cp-rshubhashree7-sources-projects.vercel.app
+
